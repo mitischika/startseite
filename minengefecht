@@ -67,21 +67,21 @@
     <div class="container">
         <h1>Willkommen auf meiner Webseite</h1>
         <div class="box">
-            <img src="Herstellungsfeld2x2.png" alt="Bild 1"> <!-- Erstes Bild -->
-            <p>Beschreibung für Bild 1</p>
+            <img src="LB_1.png" alt="LuckyBlock I herstellen"> <!-- Erstes Bild -->
+            <p>Beinhaltet allgemein nützliches und währt verbesserte Ausrüstung.</p>
         </div>
         <div class="box">
-            <img src="Herstellungsfeld3x3.png" alt="Bild 2"> <!-- Zweites Bild -->
-            <p>Beschreibung für Bild 2</p>
+            <img src="LB_2.png" alt="LuckyBlock II herstellen"> <!-- Zweites Bild -->
+            <p>Beinhaltet gut verbesserte Ausrüstung.</p>
         </div>
         <!-- Weitere Boxen und Text wie zuvor -->
         <div class="box">
-            <img src="bild4.jpg" alt="Bild 4">
-            <p>Beschreibung für Bild 4</p>
+            <img src="LB_3" alt="LuckyBlock III herstellen">
+            <p>Währt weitaus verbesserte Ausrüstung.</p>
         </div>
         <div class="box">
-            <img src="bild5.jpg" alt="Bild 5">
-            <p>Beschreibung für Bild 5</p>
+            <img src="nether_star.png" alt="Splitter herstellen">
+            <p>Splitter werden automatisch durch Erze eingesammelt, doch es besteht die Möglichkeit, sie selbst herzustellen.</p>
         </div>
         <div class="box">
             <img src="bild6.jpg" alt="Bild 6">
@@ -94,7 +94,9 @@
             Das ist ein Text.
         </div>
         <div class="link">
-            <a href="andere_seite.html">Zu einer anderen Seite</a>
+            <a href="https://www.youtube.com/channel/UC-vBq27saFzqQ7CCP9mySJw">YouTube</a>
+            <a href="https://github.com/mitischika/startseite/raw/main/index.html">Startseite</a>
+            <a href="#">Community</a>
         </div>
     </div>
 </body>
