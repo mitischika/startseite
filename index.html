@@ -27,6 +27,12 @@
             padding: 10px;
             border: 1px solid #ccc;
             text-align: center;
+            box-shadow: 3px 3px 5px #888888; /* Schatten hinzufügen */
+            transition: transform 0.2s; /* Animationseffekt hinzufügen */
+        }
+
+        .box:hover {
+            transform: scale(1.05); /* Bei Hover vergrößern */
         }
 
         .box img {
@@ -49,6 +55,11 @@
             font-weight: bold;
             color: #007bff;
         }
+
+        .bottom-text {
+            text-align: center;
+            margin-top: 20px;
+        }
     </style>
 </head>
 
@@ -67,8 +78,25 @@
             <img src="bild3.jpg" alt="Bild 3">
             <p>Beschreibung für Bild 3</p>
         </div>
+        <!-- Neu hinzugefügte Boxen mit Schatten -->
+        <div class="box">
+            <img src="bild4.jpg" alt="Bild 4">
+            <p>Beschreibung für Bild 4</p>
+        </div>
+        <div class="box">
+            <img src="bild5.jpg" alt="Bild 5">
+            <p>Beschreibung für Bild 5</p>
+        </div>
+        <div class="box">
+            <img src="bild6.jpg" alt="Bild 6">
+            <p>Beschreibung für Bild 6</p>
+        </div>
+        <!-- Text unter den Boxen -->
+        <div class="bottom-text">
+            Dies ist der Text unter den Boxen.
+        </div>
         <div class="text">
-            Hier steht ein Text, den Sie anpassen können.
+            Das ist ein Text.
         </div>
         <div class="link">
             <a href="andere_seite.html">Zu einer anderen Seite</a>
