@@ -17,8 +17,19 @@
             text-align: center;
         }
 
+        .header-box {
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
         h1 {
             font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .schrift-ueber-uberschrift {
+            font-size: 18px;
+            color: #888;
         }
 
         img {
@@ -47,7 +58,10 @@
 
 <body>
     <div class="container">
-        <h1>Überschrift</h1>
+        <div class="header-box">
+            <span class="schrift-ueber-uberschrift">Darüberliegende Schrift</span>
+            <h1>Überschrift</h1>
+        </div>
         <img src="dein_bild.jpg" alt="Bild">
         <p>Kleiner Text.</p>
         <div class="links">
@@ -59,4 +73,3 @@
 </body>
 
 </html>
-
