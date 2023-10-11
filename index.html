@@ -2,96 +2,109 @@
 <html>
 <head>
     <title>mitischika</title>
-    <link rel="icon" href="dein-icon-bild.ico" type="image/x-icon">
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
-            margin: 0; /* Entferne den Standardabstand des Body-Elements */
         }
-        .header {
+
+        #header {
             background-color: #f0f0f0;
             text-align: right;
-            color: #333;
+            padding: 10px;
+            color: #444;
         }
-        .content {
-            width: 20%;
-            height: 10%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0 auto; /* Zentriere die .content-Box horizontal */
-        }
-        .image-box {
+
+        #logo {
+            width: 100%;
             text-align: center;
-            height: 100px;
+        }
+
+        #logo img {
             width: 100%;
         }
-        h1 {
-            color: orange;
+
+        #headline {
+            text-align: center;
             font-weight: bold;
-            text-shadow: 2px 2px 2px #666;
+            font-size: 24px;
+            color: orange;
+            text-shadow: 2px 2px 2px #888;
         }
-        p {
+
+        #content {
             text-align: justify;
+            padding: 20px;
         }
+
         .article-box {
-            display: flex;
-            justify-content: space-around;
+            display: inline-block;
+            width: 30%;
+            height: 10%;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .article-box img {
+            width: 100%;
+        }
+
+        #footer {
+            text-align: center;
             margin-top: 20px;
         }
-        .article-box a {
-            text-decoration: none;
-        }
-        .article-box div {
-            text-align: center;
-        }
-        .blue-links {
-            text-align: center;
-            font-weight: bold;
+
+        #footer a {
             color: blue;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 0 10px;
         }
-        .footer {
+
+        #logik {
             text-align: right;
-            color: #ccc;
+            color: #444;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="header">
+    <div id="header">
         mitischika
     </div>
-    <div class="content">
-        <div class="image-box">
-            <img src="Hintergrund.png" alt="Hintergrundbild">
-        </div>
+    <div id="logo">
+        <img src="your-image.jpg" alt="Your Image">
     </div>
-    <h1>Willkommen auf mitischik' Webseite</h1>
-    <p>Nachfolgend findest du viele Informationen rund um den Server</p>
+    <div id="headline">
+        Willkommen auf meiner Webseite
+    </div>
+    <div id="content">
+        Hier steht Ihr Text im Blocksatz.
+    </div>
     <div class="article-box">
-        <div>
-            <a href="https://mitischika.github.io/minengefecht/">
-                <img src="Hintergrund.png" alt="Artikel 1">
-                <p>Minengefecht</p>
-            </a>
-        </div>
-        <div>
-            <a href="link-zu-artikel-2.html">
-                <img src="bild2.jpg" alt="Artikel 2">
-                <p>Artikel</p>
-            </a>
-        </div>
-        <div>
-            <a href="link-zu-artikel-3.html">
-                <img src="bild3.jpg" alt="Artikel 3">
-                <p>Artikel</p>
-            </a>
-        </div>
+        <a href="https://mitischika.github.io/minengefecht/">
+            <img src="Hintergrund.png" alt="Minengefecht">
+        </a>
+        Artikel 1
     </div>
-    <div class="blue-links">
-        <a href="impressum.html">Impressum</a> | <a href="link2.html">Link 2</a> | <a href="link3.html">Link 3</a> | <a href="download.html">Download</a>
+    <div class="article-box">
+        <a href="link_zu_artikel_2.html">
+            <img src="article2.jpg" alt="Artikel 2">
+        </a>
+        Artikel 2
     </div>
-    <div class="footer">
+    <div class="article-box">
+        <a href="link_zu_artikel_3.html">
+            <img src="article3.jpg" alt="Artikel 3">
+        </a>
+        Artikel 3
+    </div>
+    <div id="footer">
+        <a href="impressum.html">Impressum</a>
+        <a href="link2.html">Download</a>
+        <a href="https://www.youtube.com/channel/UC-vBq27saFzqQ7CCP9mySJw">YouTube 3</a>
+    </div>
+    <div id="logik">
         LOGIK
     </div>
 </body>
