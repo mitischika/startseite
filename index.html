@@ -48,25 +48,9 @@
             text-align: center;
             vertical-align: top;
             padding: 10px;
-            cursor: pointer; /* Macht den Mauszeiger zum Zeiger, um zu signalisieren, dass es anklickbar ist */
         }
 
         .article-box img {
-            width: 100%;
-        }
-
-        .popup {
-            display: none;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .content {
-            display: inline-block;
-            vertical-align: top;
-        }
-
-        .content img {
             width: 100%;
         }
 
@@ -92,10 +76,6 @@
         @media (max-width: 720px) {
             .article-box {
                 display: block;
-                width: 50%;
-                height: 20%;
-            }
-            .content {
                 width: 100%;
             }
         }
@@ -110,85 +90,53 @@
     </div>
     <div id="headline">
         <p></p>
-        <h1>MINENGEFECHT</h1>
+        <h1>Willkommen auf der offiziellen Webseite</h1>
         <p></p>
         <p></p>
     </div>
     <div id="content">
-        <p>
-            Wir begrüßen euch auf der Informationsseite für das Spiel 'Minengefecht'.
+        <p>Bitte lasst euch nicht abschrecken, denn 'mitischika' ist nur der Name eines Projektes, welches sich nach Zeit und Arbeit zu einem etwas viel Größerem entwickelte. 
+        Bei dem Projekt handelte es sich um eine kleine Welt, in der sich Spieler in den kleinsten Minispielen duellieren könnten. 
+        Die mitischika Welt wurde im August 2023 eröffnet.
         </p>
-        <p>
-            In diesem Spiel werdet ihr mit bis zu 11 anderen Spielern in eine 150x150 große Arena teleportiert. 
-            Die Arena befindet sich unter der Erde. 
-            Ihr könnt euch mit einer Spitzhacke durch das Gestein bewegen. 
-            Jeder Spieler spielt für sich alleine. 
-            Ihr findet Ausrüstung, indem ihr Erze im Boden abbaut. 
-            Nach einer bestimmten Zeit werdet ihr an die Oberfläche in eine Kampfarena gebracht. 
-            Gewonnen hat entweder der letzte Überlebende oder alle Spieler, wenn die Zeit abläuft.
+        <p>Und nun handelt es sich hierbei wirklich um eine Spielwelt, in der dich das Abenteuer in diversen Spielen erwarten wird. 
+        Besonders freuen wir uns, euch zuallererst das Spiel 'Minengefecht' zu präsentieren. 
+        Währenddessen arbeiten wir an einem anderen kleinen Spiel, bei dem es um Geschicklichkeit geht.
         </p>
+        <p>Im Folgenden berichten wir euch mehr über die einzelnen Inhalte der Welt und geben weitere Informationen zu dem einen oder anderen Thema und Spiel.</p>
+        <p>Wir freuen uns und laden euch herzlich in mitischika' Welt ein.</p>
         <p></p>
         <p></p>
     </div>
     <table class="article-table">
         <tr>
-            <td class="article-box" onclick="showPopup(1)">
-                <img src="Hintergrund.png" alt="Rezepte">
-                Rezepte
+            <td class="article-box">
+                <a href="https://mitischika.github.io/minengefecht/">
+                    <img src="Hintergrund.png" alt="Minengefecht">
+                </a>
+                Spiel MINENGEFECHT
             </td>
-            <td class="article-box" onclick="showPopup(2)">
-                <img src="Hintergrund.png" alt="Artikel 2">
+            <td class="article-box">
+                <a href="link_zu_artikel_2.html">
+                    <img src="Hintergrund.png" alt="Artikel 2">
+                </a>
                 Zweite Seite
             </td>
-            <td class="article-box" onclick="showPopup(3)">
-                <img src="Hintergrund.png" alt="Artikel 3">
+            <td class="article-box">
+                <a href="link_zu_artikel_3.html">
+                    <img src="Hintergrund.png" alt="Artikel 3">
+                </a>
                 Dritte Seite
             </td>
         </tr>
     </table>
-    <div class="popup" id="popup1">
-        <div class="content">
-            <img src="LB_1.png" alt="Lucky Block I">
-            <p><strong>Lucky Block I</strong></p>
-        </div>
-        <div class="content">
-            <img src="LB_2.png" alt="Lucky Block II">
-            <p><strong>Lucky Block II</strong></p>
-        </div>
-        <div class="content">
-            <img src="LB_3.png" alt="Lucky Block III">
-            <p><strong>Lucky Block III</strong></p>
-        </div>
-        <div class="content">
-            <img src="nether_star.png" alt="Splitter">
-            <p><strong>Splitter</strong></p>
-        </div>
-    </div>
-    <div class="popup" id="popup2">
-        <strong>Inhalt für die Zweite Seite</strong>
-    </div>
-    <div class="popup" id="popup3">
-        <strong>Inhalt für die Dritte Seite</strong>
-    </div>
-
     <div id="footer">
-        <a href="https://mitischika.github.io/startseite/">Startseite</a>
+        <a href="impressum.html">Impressum</a>
         <a href="link2.html">Download</a>
         <a href="https://www.youtube.com/channel/UC-vBq27saFzqQ7CCP9mySJw">YouTube</a>
     </div>
     <div id="logik">
         LOGIK
     </div>
-
-    <script>
-        function showPopup(popupNumber) {
-            var popup = document.getElementById("popup" + popupNumber);
-            if (popup.style.display === "block") {
-                popup.style.display = "none";
-            } else {
-                popup.style display = "block";
-            }
-        }
-    </script>
 </body>
 </html>
