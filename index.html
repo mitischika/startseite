@@ -38,12 +38,16 @@
             margin-left: 10px;
         }
 
+        .article-table {
+            width: 100%;
+        }
+
         .article-box {
-            display: inline-block;
+            display: table-cell;
             width: 30%;
-            height: 10%;
-            margin: 10px;
             text-align: center;
+            vertical-align: top;
+            padding: 10px;
         }
 
         .article-box img {
@@ -69,12 +73,10 @@
         }
 
         /* Media Query für Bildschirme kleiner oder gleich 720px (typisch für Handys) */
-        @media (min-width: 480px) and (max-width: 720px) {
-
+        @media (max-width: 720px) {
             .article-box {
-                width: 80%; /* Ändere die Breite auf 100%, um die Boxen untereinander anzuzeigen */
-                height: 30%;
-                
+                display: block;
+                width: 100%;
             }
         }
     </style>
@@ -106,24 +108,28 @@
         <p></p>
         <p></p>
     </div>
-    <div class="article-box">
-        <a href="https://mitischika.github.io/minengefecht/">
-            <img src="Hintergrund.png" alt="Minengefecht">
-        </a>
-        Spiel MINENGEFECHT
-    </div>
-    <div class="article-box">
-        <a href="link_zu_artikel_2.html">
-            <img src="Hintergrund.png" alt="Artikel 2">
-        </a>
-        Zweite Seite
-    </div>
-    <div class="article-box">
-        <a href="link_zu_artikel_3.html">
-            <img src="Hintergrund.png" alt="Artikel 3">
-        </a>
-        Dritte Seite
-    </div>
+    <table class="article-table">
+        <tr>
+            <td class="article-box">
+                <a href="https://mitischika.github.io/minengefecht/">
+                    <img src="Hintergrund.png" alt="Minengefecht">
+                </a>
+                Spiel MINENGEFECHT
+            </td>
+            <td class="article-box">
+                <a href="link_zu_artikel_2.html">
+                    <img src="Hintergrund.png" alt="Artikel 2">
+                </a>
+                Zweite Seite
+            </td>
+            <td class="article-box">
+                <a href="link_zu_artikel_3.html">
+                    <img src="Hintergrund.png" alt="Artikel 3">
+                </a>
+                Dritte Seite
+            </td>
+        </tr>
+    </table>
     <div id="footer">
         <a href="impressum.html">Impressum</a>
         <a href="link2.html">Download</a>
