@@ -44,10 +44,14 @@
             height: 10%;
             margin: 10px;
             text-align: center;
+            background-image: url('Hintergrund.png'); /* Standardbild */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
         }
 
         .article-box img {
-            width: 100%;
+            display: none; /* Verstecke das Bild, da es durch das Hintergrundbild ersetzt wird */
         }
 
         #footer {
@@ -72,6 +76,7 @@
         @media (max-width: 1080px) {
             .article-box {
                 width: 100%; /* Ändere die Breite auf 100%, um die Boxen untereinander anzuzeigen */
+                background-size: contain; /* Hintergrundbild kleiner anzeigen */
             }
         }
     </style>
@@ -105,21 +110,21 @@
     </div>
     <div class="article-box">
         <a href="https://mitischika.github.io/minengefecht/">
-            <img src="Hintergrund.png" alt="Minengefecht">
+            <!-- Hier kannst du den Inhalt deiner Artikel-Box einfügen -->
+            Spiel MINENGEFECHT
         </a>
-        Spiel MINENGEFECHT
     </div>
     <div class="article-box">
         <a href="link_zu_artikel_2.html">
-            <img src="Hintergrund.png" alt="Artikel 2">
+            <!-- Hier kannst du den Inhalt deiner Artikel-Box einfügen -->
+            Zweite Seite
         </a>
-        Zweite Seite
     </div>
     <div class="article-box">
         <a href="link_zu_artikel_3.html">
-            <img src="Hintergrund.png" alt="Artikel 3">
+            <!-- Hier kannst du den Inhalt deiner Artikel-Box einfügen -->
+            Dritte Seite
         </a>
-        Dritte Seite
     </div>
     <div id="footer">
         <a href="impressum.html">Impressum</a>
